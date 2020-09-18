@@ -18,8 +18,10 @@ const images = [
 ];
 
 const galleryRef = document.querySelector('#gallery');
-galleryRef.classList.add('gallery__wrapper')
-console.log(galleryRef);
-images.forEach(image => { 
-galleryRef.insertAdjacentHTML('afterbegin', `<li class="gallery__list" ><img class='gallery__img' src="${image.url}" alt="${image.alt}"></li> ` )
-})
+galleryRef.classList.add('gallery__wrapper');
+images.forEach(image => {
+  galleryRef.insertAdjacentHTML(
+    'afterbegin',
+    `<li class="gallery__list" ><img class='gallery__img' src="${image.url}" alt="${image.alt}"></li> `,
+  );
+});

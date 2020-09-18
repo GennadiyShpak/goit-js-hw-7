@@ -8,10 +8,8 @@ const ingredients = [
   'Приправы',
 ];
 const listOfIngridientsRef = document.querySelector('#ingredients');
-console.log(listOfIngridientsRef);
-
-ingredients.forEach(element => { 
-    const ingredient = document.createElement('li');
-    ingredient.textContent = element;
-    listOfIngridientsRef.appendChild(ingredient)
-})
+ingredients.forEach(element => {
+  const ingredient = document.createElement('li');
+  ingredient.textContent = element;
+  listOfIngridientsRef.appendChild(ingredient);
+});

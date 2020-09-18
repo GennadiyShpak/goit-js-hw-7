@@ -3,7 +3,7 @@ const refs = {
   boxWrapper: document.querySelector('#boxes'),
   renderBtn: document.querySelector('button[data-action="render"]'),
   destroy: document.querySelector('button[data-action="destroy"]'),
-  input: document.querySelector('input'),
+  input: document.querySelector('.boxValue'),
 };
 
 const colorGenerator = () => {
